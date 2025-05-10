@@ -29,7 +29,8 @@ Contextual Analysis: Provides insights and related historical context based on i
 
 Data Aggregation: Pulls data from multiple trusted historical databases to present accurate information.
 
-Interactive UI: Allows users to interact with analyzed data, zoom into timelines, and explore further details.
+Interactive UI: Allows users to interact with analyzed data, zoom into timelines, and explore further details
+
 
 ## Available Historical Events
 
@@ -108,4 +109,4 @@ To add more historical events, edit the `src/data/historicalEvents.js` file foll
 This project is open source and available under the MIT License.
 =======
 # HistoryExplorer
->>>>>>> 877e69b0f0ad0c12422aaad5bf965ec4aad4c9c2
+
