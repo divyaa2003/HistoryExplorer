@@ -1,0 +1,160 @@
+/* Card background patterns for Pixel Puranas */
+
+/* Vishnu Purana card background */
+.vishnu-card-bg {
+  background: linear-gradient(rgba(93, 16, 73, 0.85), rgba(93, 16, 73, 0.85)),
+              url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23FF6D00' fill-opacity='0.4'%3E%3Cpath d='M20 20h20v20H20V20zm20 0h20v20H40V20zm0 20h20v20H40V40zM20 40h20v20H20V40z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Bhagavata Purana card background */
+.bhagavata-card-bg {
+  background: linear-gradient(rgba(93, 16, 73, 0.85), rgba(93, 16, 73, 0.85)),
+              url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='%23FF6D00' fill-opacity='0.4'%3E%3Cpath d='M30 30c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10-4.477 10-10 10zm0 20c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10-4.477 10-10 10z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Shiva Purana card background */
+.shiva-card-bg {
+  background: linear-gradient(rgba(93, 16, 73, 0.85), rgba(93, 16, 73, 0.85)),
+              url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill='%23FF6D00' fill-opacity='0.4'%3E%3Cpath d='M0 0h40v40H0V0zm20 20v20h20V20H20zm0-20h20v20H20V0z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Card hover effects */
+.purana-card:hover .card-image {
+  transform: scale(1.05);
+}
+
+.card-image {
+  transition: transform 0.5s ease;
+}
+
+/* Card image container */
+.card-image-container {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Card content overlay */
+.card-content-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  padding: 20px;
+  color: white;
+}
+
+/* Card decorative elements */
+.card-decorative-element {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #FF6D00;
+  opacity: 0.2;
+  border-radius: 50%;
+}
+
+.card-decorative-element-1 {
+  top: 10px;
+  right: 10px;
+}
+
+.card-decorative-element-2 {
+  bottom: 10px;
+  left: 10px;
+}
+
+/* Card border glow effect */
+.card-border-glow {
+  position: relative;
+}
+
+.card-border-glow::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(45deg, #FF6D00, #FFC107, #5D1049, #FF6D00);
+  z-index: -1;
+  filter: blur(5px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.card-border-glow:hover::after {
+  opacity: 1;
+}
+
+/* Animated background for hero sections */
+.animated-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23FF6D00' fill-opacity='0.2'%3E%3Cpath d='M50 0c27.614 0 50 22.386 50 50S77.614 100 50 100 0 77.614 0 50 22.386 0 50 0zm0 20c16.569 0 30 13.431 30 30S66.569 80 50 80 20 66.569 20 50s13.431-30 30-30z'/%3E%3C/g%3E%3C/svg%3E");
+  z-index: -1;
+  opacity: 0.5;
+  animation: float 15s infinite linear;
+}
+
+@keyframes float {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100px 100px;
+  }
+}
+
+/* Decorative divider */
+.decorative-divider {
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #FF6D00, #5D1049, #FF6D00, transparent);
+  margin: 2rem auto;
+  width: 80%;
+  border-radius: 2px;
+}
+
+/* Glowing text effect */
+.text-glow {
+  text-shadow: 0 0 10px rgba(255, 109, 0, 0.8), 0 0 5px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+/* Animated background for sections */
+.bg-animated-pattern {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-animated-pattern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%235D1049' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  z-index: -1;
+  animation: float-slow 30s infinite linear;
+}
+
+@keyframes float-slow {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60px 60px;
+  }
+}
